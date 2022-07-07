@@ -105,6 +105,9 @@
 
 [user]
 	useConfigOnly = true
+	eail = rhuauyam@uni.pe
+	email = rhuauyam@uni.pe
+	name = Roger
 
 [http]
 	cookieFile = ~/.gitcookies
