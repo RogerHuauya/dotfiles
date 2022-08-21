@@ -12,7 +12,7 @@ if [ -f ~/.zshrc_local_before ]; then
 fi
 
 # External plugins (initialized before)
-source ~/.zsh/plugins_before.zsh
+#source ~/.zsh/plugins_before.zsh
 
 # Settings
 source ~/.zsh/settings.zsh
@@ -27,10 +27,14 @@ source ~/.shell/external.sh
 source ~/.shell/aliases.sh
 
 # Custom prompt
-source ~/.zsh/prompt.zsh
+#source ~/.zsh/prompt.zsh
+source ~/.shell/git_prompt.sh
+precmd() {
+  __posh_git_ps1 '%F{green}%n ->%f %F{0087ff}%~%f %F{magenta}' '> %f '}
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # External plugins (initialized after)
-source ~/.zsh/plugins_after.zsh
+#source ~/.zsh/plugins_after.zsh
 
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
