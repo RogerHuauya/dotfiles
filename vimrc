@@ -31,7 +31,6 @@ Plug 'morhetz/gruvbox'
 
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'sheerun/vim-polyglot'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 let mapleader=" "
