@@ -50,5 +50,5 @@ disable r
 
 # Look for history with prefix
 
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
